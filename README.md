@@ -1,7 +1,8 @@
 # ocp_template
 a blank template that can be cloned demonstrating ocp style.
-
-it contains the following directory structure
+note the milestones (which do not get copied when you clone).
+also note that this can be public or private until we submit a manuscript.
+this repo contains the following directory structure
 
 - **Background**: to put all articles that we discuss, many of which will be referenced in our publication. Call each file <Last name of first author><last 2 digits of year>, eg, Smith15.
 - **Code**: this will house all your code.
