@@ -17,3 +17,10 @@ this repo contains the following directory structure
   - **Base**: this is the raw data but after processing to make it suitable for your analysis. It gets into this form via scripts in the 'DataIngest' folder. This may include, for example, a script to download the data, convert it from csv to matlab, rename some of the variables, etc.
   - **Results**: this includes any data derivatives from running code that you wrote, including, especially, any data necessary to reproduce any results, including figures and tables and other numbers reported.
 - **Draft**: will be the text & bib & style files for the manuscript
+- 
+
+Code should follow the appropriate languages style guidelines.  In general, we default to Python.
+    - [Python PEP 8](https://www.python.org/dev/peps/pep-0008)
+    - [MATLAB](https://sites.google.com/site/matlabstyleguidelines/) 
+    - [Google's R Style Guide](https://google-styleguide.googlecode.com/svn/trunk/Rguide.xml)
+
