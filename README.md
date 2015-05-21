@@ -1,6 +1,9 @@
 # ocp_template
-a blank template that can be cloned demonstrating ocp style.
-note the milestones (which do not get copied when you clone).
+a blank github repo template that can be cloned demonstrating ocp style.
+for our poster template, see here: https://www.lucidchart.com/invitations/accept/dae2deba-d73e-414f-b3df-5d2661e1cede
+for our slides templates, see here: https://drive.google.com/folderview?id=0B_dAuemRqBb9fk1PWW1YaU0tT28xTjRzc0hfQVRGeEJzdXNDY1hSeWJUZFFsQ1dyNGJjX3M&usp=sharing
+
+note the milestones in this github repo (which do not get copied when you clone).
 also note that this can be public or private until we submit a manuscript.
 this repo contains the following directory structure
 
