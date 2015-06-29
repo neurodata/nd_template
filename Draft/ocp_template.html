@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</head>
+<body>
+<header>
+<h1 class="title">OCP Publication Style Guidelines</h1>
+<h2 class="author">jovo</h2>
+</header>
+<h1>General Guidelines</h1>
+<ul>
+<li><p>Decide who your readers are. Remember, at least a subset of your readers are the editor and reviewer, who possibly know a lot about the subject matter (possibly more than you). Therefore, never be negative of any prior work, because you might be insulting the referees!</p></li>
+<li><p>Generate “displays&quot; of the main results. These results can either be theorems or figures, but nothing else (never a chart). One display per finding, no more, no less. Only when these are essentially done, does it make sense to really start writing. Note that if these are figures (containing results, rather than schmeatics), these should be generated in fully reproducible way. In other words, there should be a script in a repository that somebody else can download and run and obtain the exact same figure. This script should have a flag that enables the user to either (i) generate the results from the raw data, or (ii) just load the results. Different users will proceed differently, based on their interests. This part of the writing should take by far the longest.</p></li>
+<li><p>Each display needs a ``caption'' (either a proof or an actual caption). Basically finalize this. Captions start with a 1 sentence summary describing what is being shown. They end with the take home message. In the middle, they provide all necessary details to get a reader from the first sentence to the last one.<br />
+</p></li>
+<li><p>Write an outline. Read the below suggested structure, and write 1 sentence per paragraph, as decribed below.</p></li>
+<li><p>Start filling in paragraphs. Make sure to following the [[https://preciseedit.wordpress.com/2012/04/03/the-3-cs-of-effective-paragraphs|three C's]] convention for each paragraph.</p></li>
+<li><p>Consider buying [[http://smile.amazon.com/Writing-Science-Papers-Proposals-Funded/dp/0199760241/ref=sr_1_1?ie=UTF8&amp;qid=1427700082&amp;sr=8-1&amp;keywords=scientific+writing|this book]] for more details.</p></li>
+</ul>
+<h1>Abstract</h1>
+<p>Abstract is structured like introduction, but shorter, typically 125 to 250 words, definitely only 1 paragraph.</p>
+<h1>Introduction</h1>
+<p>The introduction has a minimum of 3 paragraph, possibly more, all following the OCARF structure.</p>
+<ul>
+<li><p><strong>Opportunity</strong>: This is described in a single paragraph. Convey that there is now some awesome <strong>opportunity</strong> emerging, because our colleagues have been working very hard doing brilliant stuff. We are on the cusp of learning something fundamental, that we've never been able to ascertain before. Remember to funnel down, from most general opportunity (eg, understanding the neural code for behavior), to the very specific one (eg, understanding which neurons may be causally involved in larval drosophila behavior). Also remember that this is an opportunity to tell your readers (upon whose shoulders your work is built), how awesome they are. They did so much great work to get us to the point that we could add this cherry on top.</p></li>
+<li><p><strong>Gap</strong>: Last sentence of 1st paragraph: but, there is a <strong>gap</strong>: something that we don't know, how don't know how to do, that resolves the age old mystery.</p></li>
+<li><p><strong>Challenge</strong>: At least 1 paragraph, maybe 1 per challenge. Explain that resolving this <strong>gap</strong>, to address <strong>opportunity</strong>, is very challenging for a number of reasons. State reasons from most obvious to least. For each, give credit to colleagues who have brought us much closer, though not close enough yet. This is another opportunity to remind the readers how great they are, and how you could not possibly have done with work without standing on their shoulders.</p></li>
+<li><p><strong>Action</strong>: This gets about 1 paragraph, maybe a little less. Key is explaining how the <em>action</em> we took addresses the <em>challenges</em> we faced, to fill the <em>gap</em> that existed in the literature, which now resolves the original <strong>opportunity</strong>.</p></li>
+<li><p><strong>Resolution:</strong> This couple sentences <strong>resolves</strong> the <strong>gap</strong>. In other words, there was an opportunity, that opportunity no longer exists. This likely includes: (i) theory, (ii) simulated experiments, (iii) real data analysis, (iv) model checking / synthetic data analysis.</p></li>
+<li><p><strong>Future</strong>: 1-2 sentences explaining what new <em>opportunities</em> now arise, by virtue of our resolution.</p></li>
+</ul>
+<h1>Results</h1>
+<h2>Overview</h2>
+<h2>Simulated Experiments</h2>
+<h1>Illustrative Example</h1>
+<p>First result always illustrates the main conclusion from the paper, either via a simulation or real data example.</p>
+<h1>Toy Example</h1>
+<p>Next is a toy problem, that enables us to build our intuition as to why this approach is useful.</p>
+<h1>Complicated Examples</h1>
+<p>Stress test the method, demonstrating the extreme cases of where it works when it should, and even when it shouldn't. Possibly this includes simulated benchmarks.</p>
+<h2>Theoretical Results</h2>
+<h2>Benchmark Experiments</h2>
+<p>Some real data analysis, demonstrating that our approach outperforms other methods on several benchmark datasets.</p>
+<h2>Experiments on Novel Datasets</h2>
+<p>A motivating example perhaps, that justifies the development of this method in the first place.</p>
+<h1>Discussion</h1>
+<ul>
+<li><p><strong>Summary</strong>: In a paragraph, summarize, in a reverse funnel fashion, stating the precise result, and then zooming out to show its relationship to the more general problem. Explain how this result changes the life of the reader. What can she do now, that she couldn't do before?</p></li>
+<li><p><strong>Related Work</strong>: In about 2 paragraphs, talk about the most closely related results (~1 paragraph per). Remember, the authors of these works are your reviewers, colleagues, and friends, so be as generous as possible, without stomping on your own parade. There is no reason to be at all negative of anybody else's work, just highlight the advantages of this work.</p></li>
+<li><p><strong>Future</strong>: Explain how this work enables the next work. What problems are now open, that we not possible to address before, or perhaps not even conceived of before? This also should funnel out, from the most specific problems, ending with the most general ones.</p></li>
+</ul>
+<p>These are articles<span class="citation" data-cites="Caruana08"><sup><a href="#ref-Caruana08">1</a></sup></span>,<span class="citation" data-cites="Delgado14"><sup><a href="#ref-Delgado14">2</a></sup></span>.</p>
+<h1>Methods</h1>
+<ul>
+<li><p><strong>Problem</strong>: In a paragraph, describe the problem. Start with the most general formulation of the methods, and funnel down, much like in the first paragraph of the intro. For example, perhaps start with supervised learning, then classification, then 2-class classification, then high-dimensional two-class classification.</p></li>
+<li><p><strong>Model</strong>: In a few sentences, write down the most general statistical model under investigation. Perhaps it is non-parameteric, or perhaps it is a state-space model. Then, start making a series of simplifying assumptions. For each assumption, justify why you've made it. The only valid justifications that I now of are: (i) analytic tractability, (ii) computational efficiency, (iii) physical realism, (iv) reducing variance, or (v) increasing interpretability/understandability.</p></li>
+<li><p><strong>Algorithm</strong>: In a paragraph, describe the algorithm. Be as specific as possible. Include a pseudocode table, possibly to be put in appendix. Refer to equations in text where possibe.</p></li>
+<li><p><strong>Simulations</strong>: Describe simulation settings. This should essentially be parameters of the model specified above. 1 paragraph/bullet point per simulation study.</p></li>
+<li><p><strong>Data</strong>: In a couple sentences per dataset, describe it. Be sure to include, at a minimum, (i) a link to where it came from, (ii) the number of samples, (iii) the dimensionality, (iv) if any missing data, explain, (v) if any know structure, explain.</p></li>
+</ul>
+<div class="references">
+<h1 class="unnumbered">Some Proofs or Auxiliary Results</h1>
+<div id="ref-Caruana08">
+<p>1. Caruana, R., Karampatziakis, N. &amp; Yessenalina, A. An empirical evaluation of supervised learning in high dimensions. <em>Proceedings of the 25th International Conference on Machine Learning</em> (2008).</p>
+</div>
+<div id="ref-Delgado14">
+<p>2. Fern?andez-Delgado, M., Cernadas, E., Barro, S. &amp; Amorim, D. Do we need hundreds of classifiers to solve real world classification problems? <em>Journal of Machine Learning Research</em> <strong>15,</strong> 3133–3181 (2014).</p>
+</div>
+</div>
+</body>
+</html>
