@@ -1,4 +1,4 @@
-# Intro
+
 
 This repo contains basic info for how to organize a repo, and the contents therein.
 Note several things:
