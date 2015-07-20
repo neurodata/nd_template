@@ -1,12 +1,5 @@
----
-bibliography: ocp_template.bib
-csl: nature.csl
-title: OCP Publication Style Guidelines
-author: jovo
----
+# General Guidelines
 
-General Guidelines
-==================
 
 -   Decide who your readers are. Remember, at least a subset of your readers are
     the editor and reviewer, who possibly know a lot about the subject matter
@@ -43,14 +36,14 @@ General Guidelines
     [[http://smile.amazon.com/Writing-Science-Papers-Proposals-Funded/dp/0199760241/ref=sr\_1\_1?ie=UTF8&qid=1427700082&sr=8-1&keywords=scientific+writing\|this
     book]] for more details.
 
-Abstract
-========
+## Abstract
+
 
 Abstract is structured like introduction, but shorter, typically 125 to 250
 words, definitely only 1 paragraph.
 
-Introduction
-============
+## Introduction
+
 
 The introduction has a minimum of 3 paragraph, possibly more, all following the
 OCARF structure.
@@ -91,51 +84,51 @@ OCARF structure.
 -   **Future**: 1-2 sentences explaining what new *opportunities* now arise, by
     virtue of our resolution.
 
-Results
-=======
+## Results
 
-Overview
---------
 
-Simulated Experiments
----------------------
+### Overview
 
-Illustrative Example
-====================
+
+### Simulated Experiments
+
+
+## Illustrative Example
+
 
 First result always illustrates the main conclusion from the paper, either via a
 simulation or real data example.
 
-Toy Example
-===========
+## Toy Example
+
 
 Next is a toy problem, that enables us to build our intuition as to why this
 approach is useful.
 
-Complicated Examples
-====================
+## Complicated Examples
+
 
 Stress test the method, demonstrating the extreme cases of where it works when
 it should, and even when it shouldn't. Possibly this includes simulated
 benchmarks.
 
-Theoretical Results
--------------------
+### Theoretical Results
 
-Benchmark Experiments
----------------------
+
+### Benchmark Experiments
+
 
 Some real data analysis, demonstrating that our approach outperforms other
 methods on several benchmark datasets.
 
-Experiments on Novel Datasets
------------------------------
+### Experiments on Novel Datasets
+
 
 A motivating example perhaps, that justifies the development of this method in
 the first place.
 
-Discussion
-==========
+## Discussion
+
 
 -   **Summary**: In a paragraph, summarize, in a reverse funnel fashion, stating
     the precise result, and then zooming out to show its relationship to the
@@ -155,8 +148,8 @@ Discussion
 
 These are articles [@Caruana08], [@Delgado14].
 
-Methods
-=======
+## Methods
+
 
 -   **Problem**: In a paragraph, describe the problem. Start with the most
     general formulation of the methods, and funnel down, much like in the first
@@ -185,5 +178,4 @@ Methods
     samples, (iii) the dimensionality, (iv) if any missing data, explain, (v) if
     any know structure, explain.
 
-Some Proofs or Auxiliary Results
-================================
+## Some Proofs or Auxiliary Results
