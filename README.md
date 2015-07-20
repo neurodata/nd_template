@@ -17,6 +17,7 @@ Some notes about the poster:
  - below this are those same exact 4 sections, organized such that action is the biggest and central
  - references, acknowledgements, and logos are at the bottom (note that logos never go at the top, they are not part of your story)
  - an excellent *vertical* example is in this repo called 'm2g poster', an excellent horizontal one is coming soon.
+ - we like making posters in lucidchart, here is a link to the m2g poster: [https://www.lucidchart.com/invitations/accept/0c61e310-7a34-4f77-894c-6b624fd519d5]
 
 
 
