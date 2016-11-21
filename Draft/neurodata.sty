@@ -1,0 +1,90 @@
+%==========================
+% NeuroData template Below
+%==========================
+
+% Define Fonts
+%==============
+\RequirePackage{titlesec}
+\RequirePackage{fontspec}
+\RequirePackage[font={normalsize},{singlelinecheck=false}]{caption}
+\setmainfont[
+ BoldFont={[Gentona-Medium.ttf]}
+ ]{[Gentona-Light.ttf]}
+\setsansfont{[Quadon_W00_Bold.ttf]}
+\newfontfamily\headingfont[]{[Quadon_W00_Bold.ttf]}
+
+% Define Colours
+%================
+\definecolor{MSBlue}{rgb}{.204,.353,.541}
+\definecolor{slate}{rgb}{0.156,0.184,0.180}
+\definecolor{lgray}{rgb}{0.312,0.368,0.360}
+
+% Define Headings
+%=================
+\titleformat*{\section}{\Large\bfseries\sffamily\color{MSBlue}}
+\titleformat*{\subsection}{\large\bfseries\sffamily\color{MSBlue}}
+\titleformat*{\subsubsection}{\bfseries\sffamily\color{MSBlue}}
+\titleformat*{\paragraph}{\bfseries\sffamily\color{slate}}
+
+% Reformat Title and Abstract
+%=============================
+\renewcommand\abstractname{\sffamily\color{slate}Abstract}
+\makeatletter
+\renewcommand\@maketitle{%
+\vspace{-25pt}
+\begin{center}
+{\LARGE\headingfont\color{MSBlue}\@title \par }
+\end{center}
+\par
+}
+
+% Define Boxes for Figures
+%==========================
+\RequirePackage{tcolorbox}
+\newenvironment{cframed}[1][lgray]
+  {\begin{tcolorbox}[colframe=#1,colback=white]}
+  {\end{tcolorbox}}
+  
+\newenvironment{figurez}[1][h!]
+	{\begin{figure}\centering\begin{cframed}}
+    {\end{cframed}\end{figure}}
+
+% \makeatletter
+% \let\oldfigure\figure
+% \def\figure{\@ifnextchar[\figure@i \figure@ii}
+% \def\figure@i[#1]{\oldfigure[#1]\centering}
+% \def\figure@ii{\oldfigure\centering}
+% \makeatother
+
+% Make Footer
+%=============
+\RequirePackage{background}
+\RequirePackage{lastpage}
+\RequirePackage{hyperref}
+\pagestyle{empty}
+\backgroundsetup{
+  scale=1,
+  color=black,
+  opacity=1,
+  angle=0,
+  position=current page.south,
+  vshift=50pt,
+  contents={%
+  \small\normalfont%
+  \begin{minipage}{.92\textwidth}
+  \parbox[b]{.6\textwidth}{%
+    \thepage}\hfill
+  \small\sffamily
+  \parbox[b]{.4\textwidth}{%
+    \raggedleft NeuroData}
+  \end{minipage}\hspace{.01\textwidth}
+  \begin{minipage}{.07\textwidth} \raggedright
+	\href{http://neurodata.io}{\includegraphics[height=35pt]{neurodata_small.png}}
+  \end{minipage}%
+  }
+}
+
+% Make Endnotes
+%===============
+\RequirePackage{endnotes}
+\let\footnote\endnote
