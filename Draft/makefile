@@ -1,5 +1,5 @@
 LATEX = xelatex
-TEX = file_name
+TEX = example
 BIBTEX = bibtex
 
 default: $(TEX).tex 

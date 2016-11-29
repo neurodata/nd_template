@@ -1,0 +1,110 @@
+\documentclass[12pt]{article}
+\input{preamble.tex}
+
+\title{My paper title}
+
+\begin{document}
+\maketitle
+\begin{center} {\small\color{lgray}A list of authors and their affiliations can be found at the end of the manuscript.}\end{center}
+\thispagestyle{empty}
+\medskip
+
+\begin{abstract}
+An abstract
+\end{abstract}
+
+\section{Introduction}
+
+An introduction contains words.
+
+Often it will have citations, as well \cite{grillner, poldrack2014making}.
+
+\begin{figure}[h!]
+\begin{cframed}
+\centering
+\includegraphics[width=\textwidth]{./figs/example_fig.pdf}
+\caption{Figures get pretty frames.}
+\label{fig:sic}
+\end{cframed}
+\end{figure}
+
+
+\section{Methods}
+
+Often we do things, these things can be called methods\footnote{or procedures, perhaps}.
+
+% 
+Tables \ref{tab:hurdles} also get pretty frames. 
+
+\paragraph{Woah}
+Paragraphs are bolded.
+ 
+\begin{table}[h!]
+\begin{cframed}[lgray]
+\centering
+\caption{see! I'm framed!.}
+\begin{tabular}{ l  Q  Q  L }
+\hline
+\textbf{columns}	& \textbf{are} & \textbf{often} & \textbf{bold} \\ \hline \hline
+and  & contain & useful & data \\ \hline
+\end{tabular}
+\makeatletter
+\let\@currsize\normalsize
+\label{tab:hurdles}
+\end{cframed}
+\end{table}
+
+\paragraph{Another bold para}
+because I can. \cite{ndmg}
+
+\section{Results}
+
+We made science happen.
+ 
+\subsection{yes, we have subsections too}
+words can even go under them.
+
+
+\section{Discussion}
+
+The world is better because YOU are in it \cite{openconnectome}.
+
+
+\subsection*{Author Information}
+{\normalsize Gregory~Kiar$^{1,2}$, person 2$^{3}$, Randal~Burns$^{4}$, Joshua~T.~Vogelstein$^{1,2}$ }
+
+{\small \noindent Corresponding Author: Joshua T. Vogelstein $<$\url{jovo@jhu.edu}$>$}
+
+\begin{spacing}{0.3}
+{\normalsize \noindent${^1}$Department of Biomedical Engineering, Johns Hopkins University, Baltimore, MD, USA.\\
+${^2}$Center for Imaging Science, Johns Hopkins University, Baltimore, MD, USA.\\
+${^3}$Department of Herbology, Hogwards School of Witchcraft and Wizardry, Hogwarts, UK.\\
+${^4}$Department of Computer Science, Johns Hopkins University, Baltimore, MD, USA.}
+\end{spacing}
+
+\subsection*{Declarations}
+\paragraph{Competing Interests} The authors declare no competing interests in this manuscript.
+
+\bibliographystyle{IEEEtran}
+\begin{spacing}{0.5}
+{\footnotesize	\bibliography{example}}
+\end{spacing}
+
+% \clearpage
+\appendix
+\renewcommand\thesection{Appendix~\Alph{section}}
+\section{thought you were done?}
+\renewcommand\thesection{\Alph{section}}
+
+ya.... appendices are also a thing.
+
+\subsection{with sub sections}
+yup.
+
+
+\subsubsection{and sub sub sections}
+sorry.
+
+\theendnotes
+
+\end{document}
