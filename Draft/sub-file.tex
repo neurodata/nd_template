@@ -1,0 +1,49 @@
+\documentclass[example.tex]{subfiles}
+%% NO NEED TO INPUT PREAMBLES HERE
+%% packages are inherited; you can compile this file on its own
+%% 
+
+\onlyinsubfile{
+\title{Subfile}
+}
+
+\begin{document}
+\onlyinsubfile{
+  \maketitle
+  \thispagestyle{empty}
+  %%%% Table of Contents
+  \tableofcontents
+}
+
+
+\subsection{sub-section from a subfile}
+
+This is content from a subfile that is self contained. 
+It inherits all packages from the ``Master'' file, but can be compiled
+on its own.  This is especially nice when the document has lots of
+figures and you are only working on one section/subsection of the
+document. \\
+
+
+You can compile this subfile by using 
+\verb+xelatex sub-file.tex+\\
+
+
+The idea is that a person would copy and rename the file
+and include their content.  When working on github with more than
+one author this can be very helpfull, each person gets their own
+subfile.  %  
+\href{https://en.wikibooks.org/wiki/LaTeX/Modular_Documents#Subfiles}{Info
+  about the subfiles package can be found here}
+
+
+Citations work the same, usign the master bib file: 
+You need to remember to run bibtex on sub-file.aux.  \cite{ndmg}
+
+\onlyinsubfile{%% 
+  \bibliographystyle{IEEEtran}
+  \begin{spacing}{0.5}
+  {\footnotesize	\bibliography{example}}
+  \end{spacing}
+}
+\end{document}

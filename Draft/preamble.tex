@@ -7,6 +7,7 @@
 \usepackage{multicol}
 \usepackage{fixltx2e}
 \usepackage{amsmath,amsfonts,amsthm,amssymb}
+\usepackage[colorlinks=true]{hyperref}
 \usepackage{graphicx}
 \usepackage{tikz,pgfplots}
 \usepackage[noend]{algpseudocode}
@@ -17,6 +18,7 @@
 \usepackage{mathrsfs}
 \usepackage[sort&compress,colon,square,numbers]{natbib}
 \usepackage{subcaption}
+\usepackage{subfiles}
 \usepackage[final,authormarkup=none]{changes}
 \usepackage{framed}
 \usepackage{setspace}
@@ -61,5 +63,11 @@
 %===========
 \newcommand{\sic}[0]{{\sc{SIC}}}
 \newcommand{\ndmg}[0]{{\sc{ndmg}}}
+
+
+% Subfile commands
+%===========
+\newcommand{\onlyinsubfile}[1]{#1}
+\newcommand{\notinsubfile}[1]{}
 
 \usepackage{neurodata}

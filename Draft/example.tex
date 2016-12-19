@@ -3,7 +3,12 @@
 
 \title{My paper title}
 
+
+
 \begin{document}
+\renewcommand{\onlyinsubfile}[1]{}  %% for use with subfiles 
+\renewcommand{\notinsubfile}[1]{#1} %% for use with subfiles
+
 \maketitle
 \begin{center} {\small\color{lgray}A list of authors and their affiliations can be found at the end of the manuscript.}\end{center}
 \thispagestyle{empty}
@@ -28,6 +33,9 @@ Often it will have citations, as well \cite{grillner, poldrack2014making}.
 \end{cframed}
 \end{figure}
 
+
+%% subfiles are included like this.
+\subfile{sub-file.tex}
 
 \section{Methods}
 
