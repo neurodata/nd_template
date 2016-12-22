@@ -1,3 +1,5 @@
+(google doc template can be found [here](https://drive.google.com/previewtemplate?id=1nE9kNQmuXgYMQSgc6ozhjVIyIq3DJnfEJCXDgCGBAbM&mode=public))
+
 # General Guidelines
 
 
